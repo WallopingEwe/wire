@@ -15,7 +15,7 @@ local types_defaults = {
 
 local types_formats = {
 	NUMBER = function(x) return tostring(x) end,
-	ANGLE = function(x) return string.format("(%d,%d,%d)",x.p,x.r,x.y) end,
+	ANGLE = function(x) return string.format("(%d,%d,%d)",x.p,x.y,x.r) end,
 	VECTOR = function(x) return string.format("(%d,%d,%d)",x.x,x.y,x.z) end,
 	STRING = function(x) return x end,
 	ENTITY = function(x) return tostring(x) end,
